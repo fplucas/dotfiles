@@ -1,6 +1,6 @@
 export EDITOR='vim'
 export BROWSER='chromium'
 export TERM="termite"
-export PATH="~/.scripts:$PATH"
+export PATH="$HOME/.scripts:$PATH"
 export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
