@@ -1,0 +1,5 @@
+exec skypeforlinux &
+exec virtualbox --startvm suporte &
+exec thunderbird &
+exec remmina &
+exec slack &
