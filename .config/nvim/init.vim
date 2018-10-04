@@ -15,8 +15,23 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
+Plug 'moll/vim-node'
+Plug 'posva/vim-vue'
+Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/csscomplete.vim'
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
+Plug 'ap/vim-css-color'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
+
+" split on replace
+set inccommand=split
 
 " Git changes
 set updatetime=250
@@ -171,8 +186,8 @@ noremap <C-h> <C-w>h
 if bufwinnr(1)
   map + <C-W>+
   map - <C-W>-
-  map <C-n> <C-W><
-  map <C-m> <C-W>>
+  map <C-x> <C-W><
+  map <C-z> <C-W>>
 endif
 
 " vmap for maintain Visual Mode after shifting > and <
@@ -186,6 +201,7 @@ let g:user_emmet_leader_key=','
 augroup VimCSS3Syntax
   autocmd!
   autocmd FileType css setlocal iskeyword+=-
+  autocmd FileType scss set iskeyword+=-
 augroup END
 
 " Ack
@@ -195,4 +211,17 @@ nnoremap <leader>a :Ack!<Space>
 " fzf
 nnoremap <silent> <leader>f :FZF<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
+
+" vue
+let g:vue_disable_pre_processors = 1
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'cobalt2'
+
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
