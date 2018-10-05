@@ -1,0 +1,8 @@
+#!/bin/sh
+packages_to_update=$(yay -Qum | wc -l)
+
+if [ "$packages_to_update" = 0 ]; then
+  echo ""
+else
+  echo  $(yay -Qum | wc -l)
+fi

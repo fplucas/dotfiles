@@ -58,7 +58,7 @@ font-3 = fontawesome-webfont.ttf:size13:1
 
 modules-left = i3
 modules-center = date
-modules-right = filesystem xbacklight pulseaudio battery powermenu
+modules-right = updates filesystem xbacklight pulseaudio battery powermenu
 
 tray-position = right
 tray-padding = 0
@@ -140,6 +140,12 @@ label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; label-separator = |
+
+[module/updates]
+type = custom/script
+exec = ~/.scripts/packagestoupdate
+click-left = termite -e "yay -Syu --noconfirm"
+interval = 600
 
 [module/xbacklight]
 type = internal/xbacklight
