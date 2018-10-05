@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 export BROWSER='chromium'
 export TERM="termite"
 export PATH="$HOME/.scripts:$PATH"
