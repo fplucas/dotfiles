@@ -1,8 +1,8 @@
 # fplucas's dotfiles
 
-There are my dotfiles. I actually use them at an Archlinux machine.
+These are my dotfiles. I actually use them at an Archlinux machine.
 
-### Programs which has configs in this repository
+### Programs which have configs in this repository
 - dunst (notification daemon)
 - i3 (i3-gaps)
 - nitrogen (wallpaper setter)
@@ -15,7 +15,7 @@ There are my dotfiles. I actually use them at an Archlinux machine.
 
 ## Installing
 
-To install it's just run:
+To install, just run:
 
 ```
 git clone https://github.com/fplucas/dotfiles.git
