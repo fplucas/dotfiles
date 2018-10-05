@@ -205,7 +205,15 @@ augroup END
 
 
 " fzf
-nnoremap <silent> <leader>f :FZF<CR>
+function! FuzzyFinder()
+if !isdirectory(".git")
+  :FZF
+else
+  :GFiles
+endif
+endfunction
+
+nnoremap <silent> <leader>f :call FuzzyFinder()<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <leader>a :Ag<Space>
 
