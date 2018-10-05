@@ -1,3 +1,4 @@
 alias ls="ls -hN --color=auto --group-directories-first"
 alias t="transmission-remote"
 alias p="sudo pacman"
+alias v="nvim"
