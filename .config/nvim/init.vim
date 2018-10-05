@@ -13,7 +13,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
 Plug 'moll/vim-node'
 Plug 'posva/vim-vue'
@@ -204,13 +203,11 @@ augroup VimCSS3Syntax
   autocmd FileType scss set iskeyword+=-
 augroup END
 
-" Ack
-cnoreabbrev Ack Ack!
-nnoremap <leader>a :Ack!<Space>
 
 " fzf
 nnoremap <silent> <leader>f :FZF<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <leader>a :Ag<Space>
 
 " vue
 let g:vue_disable_pre_processors = 1
