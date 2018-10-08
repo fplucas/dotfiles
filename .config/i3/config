@@ -233,6 +233,9 @@ for_window [class="Slack"] move workspace $ws4
 # thunderbird
 for_window [class="Thunderbird"] move workspace $ws6
 
+# popup-calendar
+for_window [class="Yad"] floating enable
+
 # class                 border  backgr. text    indicator child_border
 client.focused          #41BBD9 #41BBD9 #ffffff #194854   #41BBD9
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a

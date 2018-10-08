@@ -4,7 +4,7 @@ updates_arch=$(checkupdates | wc -l)
 packages_to_update=$(("$updates_arch" + "$updates_aur"))
 
 if [ "$packages_to_update" = 0 ]; then
-  echo ""
+  echo ""
 else
-  echo  $(yay -Qum | wc -l)
+  echo  $packages_to_update
 fi
