@@ -17,7 +17,7 @@ Plug 'w0rp/ale'
 Plug 'moll/vim-node'
 Plug 'posva/vim-vue'
 Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/html5.vim'
@@ -26,6 +26,7 @@ Plug 'othree/csscomplete.vim'
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'ap/vim-css-color'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
