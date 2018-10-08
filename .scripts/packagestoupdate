@@ -1,5 +1,7 @@
 #!/bin/sh
-packages_to_update=$(yay -Qum | wc -l)
+updates_aur=$(yay -Qum | wc -l)
+updates_arch=$(checkupdates | wc -l)
+packages_to_update=$(("$updates_arch" + "$updates_aur"))
 
 if [ "$packages_to_update" = 0 ]; then
   echo ""
