@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 font-3 = fontawesome-webfont.ttf:size13:1
 
 modules-left = i3
-modules-center = date
+modules-center = popup-calendar
 modules-right = updates filesystem xbacklight pulseaudio battery powermenu
 
 tray-position = right
@@ -159,14 +159,11 @@ ramp-2 = 🌓
 ramp-3 = 🌒
 ramp-4 = 🌑
 
-[module/date]
-type = internal/date
+[module/popup-calendar]
+type = custom/script
+exec = ~/.scripts/popupcalendar
 interval = 5
-
-date = %A, %d/%m/%Y%
-time = %H:%M
-
-label =   %date%     %time%
+click-left = ~/.scripts/popupcalendar --popup
 
 [module/pulseaudio]
 type = internal/pulseaudio
