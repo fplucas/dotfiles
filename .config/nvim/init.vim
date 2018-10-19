@@ -126,7 +126,9 @@ endif
 " colorscheme
 colorscheme seoul256
 let g:seoul256_background = 239
-set colorcolumn=80
+
+" ruler
+let &colorcolumn="80,".join(range(120,999),",")
 
 " disable mouse
 set mousemodel=popup
@@ -204,17 +206,7 @@ augroup VimCSS3Syntax
   autocmd FileType scss set iskeyword+=-
 augroup END
 
-
-" fzf
-function! FuzzyFinder()
-if !isdirectory(".git")
-  :FZF
-else
-  :GFiles
-endif
-endfunction
-
-nnoremap <silent> <leader>f :call FuzzyFinder()<CR>
+nnoremap <silent> <leader>f :FZF<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <leader>a :Ag<Space>
 
