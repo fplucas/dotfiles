@@ -1,6 +1,6 @@
 # fplucas's dotfiles
 
-These are my dotfiles. I actually use them at an Archlinux machine.
+These are my dotfiles. Used in an Archlinux machine.
 
 ### Programs which have configs in this repository
 - dunst (notification daemon)
