@@ -5,7 +5,6 @@ home_dir=$HOME
 files=('.config/dunst'
        '.config/i3'
        '.config/mimeapps.list'
-       '.config/nitrogen'
        '.config/nvim'
        '.config/polybar'
        '.config/ranger'

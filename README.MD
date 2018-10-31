@@ -5,7 +5,6 @@ These are my dotfiles. Used in an Archlinux machine.
 ### Programs which have configs in this repository
 - dunst (notification daemon)
 - i3 (i3-gaps)
-- nitrogen (wallpaper setter)
 - neovim (text editor)
 - polybar (status bar)
 - ranger (file manager)
