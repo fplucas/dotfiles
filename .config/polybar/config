@@ -133,16 +133,9 @@ ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 
-format-charging = <animation-charging> <label-charging>
+format-charging = <label-charging>
 
-label-charging = %percentage%%
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-framerate = 500
+label-charging =  %percentage%%
 
 format-discharging = <ramp-capacity> <label-discharging>
 
