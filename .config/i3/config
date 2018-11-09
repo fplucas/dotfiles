@@ -12,8 +12,9 @@ floating_modifier $mod
 
 #gaps
 for_window [class="^.*"] border pixel 5
-gaps inner 5
-gaps outer 5
+#gaps inner 5
+#gaps outer 5
+hide_edge_borders smart
 
 # start a terminal
 bindsym $mod+Return exec $term
