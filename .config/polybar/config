@@ -28,7 +28,7 @@ font-3 = fontawesome-webfont.ttf:size13:1
 
 modules-left = i3
 modules-center = popup-calendar
-modules-right = spotify updates filesystem xbacklight pulseaudio battery
+modules-right = updates filesystem xbacklight pulseaudio battery
 
 tray-position = right
 tray-padding = 0
@@ -140,13 +140,6 @@ label-charging =  %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
 
 label-discharging = %percentage%% %time%
-
-[module/spotify]
-type = custom/script
-interval = 1
-format-prefix = " "
-format = <label>
-exec = python $HOME/.scripts/spotify_status.py -f '{artist} - {song}'
 
 [settings]
 screenchange-reload = true
