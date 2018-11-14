@@ -1,0 +1,3 @@
+for x in *.torrent; do
+  transmission-remote -a "$x"
+done
