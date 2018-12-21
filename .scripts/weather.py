@@ -52,8 +52,8 @@ try:
                 ICON = ""
             else:
                 ICON = ""
-        print("%%{F#FFF}%s %%{F-}%s  %i°%s  %s%%  %skm/h" % (ICON, CURRENT, TEMP, UNIT_KEY, HUMIDITY, SPEED))
+        print("%%{F#FFF}%s %%{F-}%s  %i°%s  %s%%  %skm/h" % (ICON, CURRENT, TEMP, UNIT_KEY, HUMIDITY, SPEED))
 
 except requests.exceptions.RequestException:
-    print("Recuperando condições do clima.")
+    print("Recovering weather forecast")
 
