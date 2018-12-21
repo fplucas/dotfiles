@@ -4,3 +4,4 @@ export TERM="termite"
 export PATH="$HOME/.scripts:$PATH"
 export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
+source $HOME/Dropbox/dev/envs
