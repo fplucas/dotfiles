@@ -1,5 +1,6 @@
 [colors]
-background = #222
+;background = #00000000
+background = #463246
 background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
@@ -24,49 +25,25 @@ line-color = #f00
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
+;font-0 = fixed:pixelsize=10;1
+font-0 = Anonymous\ Pro:pixelsize=10;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = fontawesome-webfont.ttf:pixelsize=12;1
+font-3 = fontawesome-webfont.ttf:pixelsize=12;3
+font-4 = feather:pixelsize=11;1
 
-modules-left = i3
-modules-center = popup-calendar
-modules-right = updates filesystem xbacklight pulseaudio battery
+modules-left = weather
+modules-center = i3
+modules-right = updates filesystem xbacklight pulseaudio battery popup-calendar
+tray-position = right
+tray-padding = 1
+tray-maxsize = 16
+enable-ipc = false
 
 wm-restack = i3
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-;----------------------------------------------------------
-;		        B A R / B O T T O M
-;----------------------------------------------------------
-[bar/bottom]
-monitor = ${env:MONITOR:DVI-I-0}
-width = 100%
-height = 27
-fixed-center = true
-bottom = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = Fira:size=10;4
-font-1 = feather:pixelsize=11;3
-font-2 = feather:pixelsize=14;2
-font-3 = fontawesome-webfont.ttf:pixelsize=12;3
-
-modules-left = weather
-modules-center = chromium twitter postman dbeaver slack spotify enpass skype
-
-tray-position = right
-tray-padding = 1
 
 [module/filesystem]
 type = custom/script
@@ -79,7 +56,7 @@ click-left = termite -e ranger
 type = internal/i3
 format = <label-state> <label-mode>
 pin-workspaces = true
-;strip-wsnumbers = true
+strip-wsnumbers = true
 index-sort = true
 wrapping-scroll = false
 
@@ -93,23 +70,25 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
-label-focused-underline = ${colors.primary}
+label-focused-foreground = #FFF
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
 label-unfocused-padding = 2
+label-unfocused-foreground = #999
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${colors.foreground}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
+
+override-redirect = true
 
 [module/updates]
 type = custom/script
@@ -142,12 +121,11 @@ format-volume = <ramp-volume> <label-volume>
 
 label-volume-foreground = ${root.foreground}
 
-label-muted = muted
-format-muted-foreground = ${colors.foreground-alt}
+label-muted = 
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 [module/battery]
 type = internal/battery
@@ -178,46 +156,6 @@ label-discharging = %percentage%% %time%
 type = custom/script
 interval = 60
 exec = $HOME/.scripts/weather.py
-
-[module/chromium]
-type = custom/text
-content = 
-click-left = chromium &
-
-[module/twitter]
-type = custom/text
-content = 
-click-left = corebird &
-
-[module/postman]
-type = custom/text
-content = 
-click-left = postman &
-
-[module/dbeaver]
-type = custom/text
-content = 
-click-left = dbeaver &
-
-[module/slack]
-type = custom/text
-content = 
-click-left = slack &
-
-[module/spotify]
-type = custom/text
-content = 
-click-left = spotify &
-
-[module/enpass]
-type = custom/text
-content = 
-click-left = enpass &
-
-[module/skype]
-type = custom/text
-content = 
-click-left = skypeforlinux &
 
 [settings]
 screenchange-reload = true
