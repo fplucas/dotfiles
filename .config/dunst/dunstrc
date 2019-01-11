@@ -1,5 +1,5 @@
 [global]
-    font = "edges,8"
+    font = "Anonymous Pro 8"
 
     markup = yes
     format = "<b>%s</b>\n%b"
@@ -23,8 +23,9 @@
     separator_color = frame
     startup_notification = false
     dmenu = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/chromium -new-tab
     icon_position = left
+    icon_path = /usr/share/icons/Adwaita/32x32/apps:/usr/share/icons/Adwaita/32x32/devices:/usr/share/icons/Adwaita/32x32/mimetypes:/usr/share/icons/Adwaita/32x32/places:/usr/share/icons/Adwaita/32x32/status
+    browser = /usr/bin/xdg-open
 
 
 [frame]
@@ -52,6 +53,3 @@
     background = "#A73E28"
     foreground = "#EDDEC9"
     timeout = 0
-
-
-
