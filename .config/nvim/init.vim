@@ -219,6 +219,7 @@ let g:deoplete#enable_at_startup = 1
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'cobalt2'
+let g:airline_skip_empty_sections = 1
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
