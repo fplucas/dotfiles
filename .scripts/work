@@ -1,5 +1,5 @@
-exec skypeforlinux &
-exec virtualbox --startvm suporte &
-exec thunderbird &
-exec remmina &
-exec slack &
+exec skypeforlinux 2>&1 >/dev/null &
+exec VBoxManage startvm suporte 2>&1 >/dev/null &
+exec thunderbird 2>&1 >/dev/null &
+exec remmina 2>&1 >/dev/null &
+exec slack 2>&1 >/dev/null &
