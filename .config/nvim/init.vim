@@ -30,6 +30,8 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
+set keywordprg=:help
+
 " split on replace
 set inccommand=split
 
