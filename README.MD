@@ -4,9 +4,7 @@ These are my dotfiles. Used in an Archlinux machine.
 
 ### Programs which have configs in this repository
 - dunst (notification daemon)
-- i3 (i3-gaps)
 - neovim (text editor)
-- polybar (status bar)
 - ranger (file manager)
 - termite (terminal)
 - transmission (torrent client)

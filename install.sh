@@ -3,10 +3,8 @@ dotfiles_dir=$(pwd)
 home_dir=$HOME
 
 files=('.config/dunst'
-       '.config/i3'
        '.config/mimeapps.list'
        '.config/nvim'
-       '.config/polybar'
        '.config/ranger'
        '.config/termite'
        '.config/transmission-daemon/settings.json'

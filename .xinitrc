@@ -1,4 +1,4 @@
 xset s off
 xset -dpms s off
 xset s noblank
-exec i3
+exec dwm
