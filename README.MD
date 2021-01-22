@@ -1,13 +1,12 @@
-# fplucas's dotfiles
+# fplucas' dotfiles
 
-These are my dotfiles. Used in an Archlinux machine.
+These are my dotfiles. Used on an Archlinux machine.
 
 ### Programs which have configs in this repository
-- dunst (notification daemon)
+
 - neovim (text editor)
 - ranger (file manager)
 - termite (terminal)
-- transmission (torrent client)
 - zsh (shell)
 
 ## Installing

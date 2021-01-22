@@ -1,32 +1,10 @@
-#ZSH port of the FISH shell's history search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# Path to oh-my-zsh installation.
+export ZSH="/home/lucas/.oh-my-zsh"
 
-# keybindings
-bindkey -v
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="gentoo"
 
-# huge history file
-HISTFILE="$HOME/.zsh_history"
-HISTSIZE=10000000
-SAVEHIST=10000000
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(asdf fzf git)
 
-# history options
-setopt SHARE_HISTORY
-setopt EXTENDED_HISTORY
-setopt HIST_VERIFY
-setopt HIST_REDUCE_BLANKS
-
-# prompt
-source $HOME/.prompt.zsh
-
-# aliases
-source $HOME/.aliases
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# asdf
-autoload -Uz compinit && compinit
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+source $ZSH/oh-my-zsh.sh
