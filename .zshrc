@@ -8,3 +8,7 @@ ZSH_THEME="gentoo"
 plugins=(asdf fzf git)
 
 source $ZSH/oh-my-zsh.sh
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi

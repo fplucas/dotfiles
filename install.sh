@@ -5,6 +5,7 @@ home_dir=$HOME
 files=('.config/nvim'
        '.config/ranger'
        '.config/termite'
+       '.dwm'
        '.gitconfig'
        '.inputrc'
        '.xinitrc'

@@ -1,9 +1,10 @@
 # fplucas' dotfiles
 
-These are my dotfiles. Used on an Archlinux machine.
+These are the dotfiles for my Arch Linux + DWM.
 
 ### Programs which have configs in this repository
 
+- dwm (window manager)
 - neovim (text editor)
 - ranger (file manager)
 - termite (terminal)
