@@ -4,7 +4,8 @@ home_dir=$HOME
 
 files=('.config/nvim'
        '.config/ranger'
-       '.config/termite'
+       '.config/alacritty.yml'
+       '.aliases'
        '.dwm'
        '.gitconfig'
        '.inputrc'
