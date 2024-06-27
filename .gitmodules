@@ -1,0 +1,6 @@
+[submodule "/home/lucas/dotfiles/ranger/.config/ranger/plugins/ranger_devicons"]
+	path = /home/lucas/dotfiles/ranger/.config/ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons
+[submodule "ranger/.config/ranger/plugins/ranger_devicons"]
+	path = ranger/.config/ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons
