@@ -2,5 +2,5 @@
 	path = ranger/.config/ranger/plugins/ranger_devicons
 	url = https://github.com/alexanderjeurissen/ranger_devicons
 [submodule "nvim"]
-	path = nvim
+	path = nvim/.config/nvim
 	url = git@github.com:fplucas/init.lua.git
