@@ -10,6 +10,7 @@ Dotfiles for my Archlinux + i3wm setup
 - waybar (status bar)
 - ranger (file manager)
 - tmux (terminal multiplexer)
+- wofi (launcher)
 - zsh (shell)
 
 ### Installation guide
