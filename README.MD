@@ -1,6 +1,6 @@
 # fplucas' dotfiles
 
-Dotfiles for my Archlinux + i3wm setup
+Dotfiles for my Archlinux + Hyprland setup
 
 ### Toolset
 
@@ -10,7 +10,7 @@ Dotfiles for my Archlinux + i3wm setup
 - waybar (status bar)
 - ranger (file manager)
 - tmux (terminal multiplexer)
-- wofi (launcher)
+- wofi (application launcher)
 - zsh (shell)
 
 ### Installation guide
