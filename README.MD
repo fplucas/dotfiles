@@ -5,11 +5,9 @@ Dotfiles for my Archlinux + i3wm setup
 ### Toolset
 
 - alacritty (terminal emulator)
-- dunst (notification daemon)
 - git (version control system)
-- i3wm (window manager)
-- picom (compositor)
-- polybar (status bar)
+- hyprland (window manager)
+- waybar (status bar)
 - ranger (file manager)
 - tmux (terminal multiplexer)
 - zsh (shell)
