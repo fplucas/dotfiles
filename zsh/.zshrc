@@ -17,6 +17,8 @@ setopt inc_append_history
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
 
+bindkey -s ^f "~/tmux-sessionizer\n"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
@@ -36,3 +38,8 @@ eval "$(starship init zsh)"
 
 alias ls="ls --color"
 alias grep="grep --color"
+alias gc="git commit -m"
+alias ga="git add"
+alias gp="git pull"
+alias gs="git status"
+alias k="kubectl"
